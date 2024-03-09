@@ -236,6 +236,7 @@
             Btn0.TabIndex = 18;
             Btn0.Text = "0";
             Btn0.UseVisualStyleBackColor = true;
+            Btn0.Click += Btn0_Click;
             // 
             // Btn1
             // 

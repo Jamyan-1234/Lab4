@@ -17,5 +17,11 @@ namespace Lab4
             txtValue.Text = "0.";
 
         }
+
+        private void Btn0_Click(object sender, EventArgs e)
+        {
+            txtValue.Text = "0.";
+
+        }
     }
 }

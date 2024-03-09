@@ -12,7 +12,7 @@ namespace Lab4
         {
             if ((txtValue.Text == "0.") ||
             (txtValue.Text == "") || cblnReplace)
-                txtValue.Text = strCurrNum + ".";
+                txtValue.Text = strCurrNum + " ";
             else
                 txtValue.Text = txtValue.Text.Substring(0,
                 txtValue.Text.Length - 1) + strCurrNum + " ";
@@ -31,7 +31,7 @@ namespace Lab4
         {
 
         }
-       
+
 
 
         private void Btn0_Click(object sender, EventArgs e)
@@ -52,7 +52,6 @@ namespace Lab4
         }
         private void Btn4_Click(object sender, EventArgs e)
         {
-
             CreateValue("4");
         }
         private void Btn5_Click(object sender, EventArgs e)
@@ -76,7 +75,66 @@ namespace Lab4
             CreateValue("9");
         }
 
-       
+        private void btnPlus_Click(object sender, EventArgs e)
+        {
+            cdblCurrTotal += Convert.ToDouble(txtValue.Text);
+            cblnReplace = true;
+            cstrLastOperation = "+";
+        }
 
+        private void btnEquals_Click(object sender, EventArgs e)
+        {
+            switch (cstrLastOperation)
+            {
+                case "+":
+                    cdblCurrTotal +=
+                    Convert.ToDouble(txtValue.Text);
+                    txtValue.Text = cdblCurrTotal.ToString();
+                    break;
+                case "-":
+                    cdblCurrTotal -=
+                    Convert.ToDouble(txtValue.Text);
+                    txtValue.Text = cdblCurrTotal.ToString();
+                    break;
+                case "*":
+                    cdblCurrTotal *=
+                    Convert.ToDouble(txtValue.Text);
+                    txtValue.Text = cdblCurrTotal.ToString();
+                    break;
+                case "/":
+                    cdblCurrTotal /=
+                    Convert.ToDouble(txtValue.Text);
+                    txtValue.Text = cdblCurrTotal.ToString();
+                    break;
+
+            }
+
+        }
+
+
+
+
+        private void btnSubtrac_Click(object sender, EventArgs e)
+        {
+            cdblCurrTotal += Convert.ToDouble(txtValue.Text);
+            cblnReplace = true;
+            cstrLastOperation = "-";
+
+        }
+
+        private void btnMultiple_Click(object sender, EventArgs e)
+        {
+            cdblCurrTotal += Convert.ToDouble(txtValue.Text);
+            cblnReplace = true;
+            cstrLastOperation = "*";
+
+        }
+
+        private void btnDivide_Click(object sender, EventArgs e)
+        {
+            cdblCurrTotal += Convert.ToDouble(txtValue.Text);
+            cblnReplace = true;
+            cstrLastOperation = "/";
+        }
     }
 }

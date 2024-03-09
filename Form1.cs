@@ -9,10 +9,10 @@ namespace Lab4
         int result;
         string operation;
 
-        
+
         private void txtValue_TextChanged(object sender, EventArgs e)
         {
-            
+
         }
 
 
@@ -23,7 +23,7 @@ namespace Lab4
 
         private void frmCalculator_Load(object sender, EventArgs e)
         {
-           
+
 
         }
 
@@ -82,7 +82,7 @@ namespace Lab4
         private void btnPlus_Click(object sender, EventArgs e)
         {
             operation = "+";
-            num1=int.Parse(txtValue.Text);
+            num1 = int.Parse(txtValue.Text);
             txtValue.Clear();
         }
         private void btnSubtrac_Click(object sender, EventArgs e)
@@ -114,12 +114,73 @@ namespace Lab4
             operation = "";
         }
 
+        private void btnMemoryClear_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnMemoryRecall_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnMemorySave_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnMemoryPlus_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPlusMinis_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPeriod_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnOneOverX_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPercent_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSqrt_Click(object sender, EventArgs e)
+        {
+            operation = "sqrt";
+            num1 = int.Parse(txtValue.Text);
+            result = num1 * num1;
+            txtValue.Text = result.ToString();
+
+        }
+
+        private void btnCE_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBackspace_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+
         private void btnEquals_Click(object sender, EventArgs e)
         {
             num2 = int.Parse(txtValue.Text);
             switch (operation)
             {
-               
+
                 case "+":
                     result = num1 + num2;
                     break;
@@ -137,14 +198,6 @@ namespace Lab4
             operation = "";
         }
 
-
-
-
-
-
-
-
-
-
+        
     }
 }

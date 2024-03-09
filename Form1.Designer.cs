@@ -65,6 +65,7 @@
             btnBackspace.TabIndex = 1;
             btnBackspace.Text = "Backspace";
             btnBackspace.UseVisualStyleBackColor = true;
+            btnBackspace.Click += btnBackspace_Click;
             // 
             // btnCE
             // 
@@ -74,6 +75,7 @@
             btnCE.TabIndex = 2;
             btnCE.Text = "CE";
             btnCE.UseVisualStyleBackColor = true;
+            btnCE.Click += btnCE_Click;
             // 
             // btnCLear
             // 
@@ -93,6 +95,7 @@
             btnMemoryClear.TabIndex = 4;
             btnMemoryClear.Text = "MC";
             btnMemoryClear.UseVisualStyleBackColor = true;
+            btnMemoryClear.Click += btnMemoryClear_Click;
             // 
             // btnMemoryRecall
             // 
@@ -102,6 +105,7 @@
             btnMemoryRecall.TabIndex = 5;
             btnMemoryRecall.Text = "MR";
             btnMemoryRecall.UseVisualStyleBackColor = true;
+            btnMemoryRecall.Click += btnMemoryRecall_Click;
             // 
             // btnMemorySave
             // 
@@ -111,6 +115,7 @@
             btnMemorySave.TabIndex = 6;
             btnMemorySave.Text = "MS";
             btnMemorySave.UseVisualStyleBackColor = true;
+            btnMemorySave.Click += btnMemorySave_Click;
             // 
             // btnMemoryPlus
             // 
@@ -120,6 +125,7 @@
             btnMemoryPlus.TabIndex = 7;
             btnMemoryPlus.Text = "+M";
             btnMemoryPlus.UseVisualStyleBackColor = true;
+            btnMemoryPlus.Click += btnMemoryPlus_Click;
             // 
             // btnDivide
             // 
@@ -170,6 +176,7 @@
             btnSqrt.TabIndex = 12;
             btnSqrt.Text = "Sqrt";
             btnSqrt.UseVisualStyleBackColor = true;
+            btnSqrt.Click += btnSqrt_Click;
             // 
             // btnPercent
             // 
@@ -180,6 +187,7 @@
             btnPercent.TabIndex = 13;
             btnPercent.Text = "%";
             btnPercent.UseVisualStyleBackColor = true;
+            btnPercent.Click += btnPercent_Click;
             // 
             // btnOneOverX
             // 
@@ -190,6 +198,7 @@
             btnOneOverX.TabIndex = 14;
             btnOneOverX.Text = "1/x";
             btnOneOverX.UseVisualStyleBackColor = true;
+            btnOneOverX.Click += btnOneOverX_Click;
             // 
             // btnEquals
             // 
@@ -210,6 +219,7 @@
             btnPlusMinis.TabIndex = 16;
             btnPlusMinis.Text = "+/-";
             btnPlusMinis.UseVisualStyleBackColor = true;
+            btnPlusMinis.Click += btnPlusMinis_Click;
             // 
             // btnPeriod
             // 
@@ -220,6 +230,7 @@
             btnPeriod.TabIndex = 17;
             btnPeriod.Text = ".";
             btnPeriod.UseVisualStyleBackColor = true;
+            btnPeriod.Click += btnPeriod_Click;
             // 
             // Btn0
             // 

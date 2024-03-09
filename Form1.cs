@@ -2,26 +2,20 @@ namespace Lab4
 {
     public partial class frmCalculator : Form
     {
-        double cdblCurrTotal = 0.0; bool
-        cblnReplace = false; string
-        cstrLastOperation = "";
 
 
+        int num1;
+        int num2;
+        int result;
+        string operation;
 
-        private void CreateValue(string strCurrNum)
-        {
-            if ((txtValue.Text == "0.") ||
-            (txtValue.Text == "") || cblnReplace)
-                txtValue.Text = strCurrNum + " ";
-            else
-                txtValue.Text = txtValue.Text.Substring(0,
-                txtValue.Text.Length - 1) + strCurrNum + " ";
-            cblnReplace = false;
-        }
+        
         private void txtValue_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
+
+
         public frmCalculator()
         {
             InitializeComponent();
@@ -29,112 +23,128 @@ namespace Lab4
 
         private void frmCalculator_Load(object sender, EventArgs e)
         {
+           
 
         }
-
-
 
         private void Btn0_Click(object sender, EventArgs e)
         {
-            CreateValue("0");
+            txtValue.Text += Btn0.Text;
+
         }
         private void Btn1_Click(object sender, EventArgs e)
         {
-            CreateValue("1");
+            txtValue.Text += Btn1.Text;
         }
         private void Btn2_Click(object sender, EventArgs e)
         {
-            CreateValue("2");
+            txtValue.Text += Btn2.Text;
         }
         private void Btn3_Click(object sender, EventArgs e)
         {
-            CreateValue("3");
+            txtValue.Text += Btn3.Text;
         }
         private void Btn4_Click(object sender, EventArgs e)
         {
-            CreateValue("4");
+            txtValue.Text += Btn4.Text;
         }
         private void Btn5_Click(object sender, EventArgs e)
         {
-            CreateValue("5");
+            txtValue.Text += Btn5.Text;
         }
         private void Btn6_Click(object sender, EventArgs e)
         {
-            CreateValue("6");
+            txtValue.Text += Btn6.Text;
         }
         private void Btn7_Click(object sender, EventArgs e)
         {
-            CreateValue("7");
+            txtValue.Text += Btn7.Text;
         }
         private void Btn8_Click(object sender, EventArgs e)
         {
-            CreateValue("8");
+            txtValue.Text += Btn8.Text;
         }
         private void Btn9_Click(object sender, EventArgs e)
         {
-            CreateValue("9");
+            txtValue.Text += Btn9.Text;
         }
+
+
+
+
+
+
+
+
+
+
 
         private void btnPlus_Click(object sender, EventArgs e)
         {
-            cdblCurrTotal += Convert.ToDouble(txtValue.Text);
-            cblnReplace = true;
-            cstrLastOperation = "+";
+            operation = "+";
+            num1=int.Parse(txtValue.Text);
+            txtValue.Clear();
         }
-
-        private void btnEquals_Click(object sender, EventArgs e)
-        {
-            switch (cstrLastOperation)
-            {
-                case "+":
-                    cdblCurrTotal +=
-                    Convert.ToDouble(txtValue.Text);
-                    txtValue.Text = cdblCurrTotal.ToString();
-                    break;
-                case "-":
-                    cdblCurrTotal -=
-                    Convert.ToDouble(txtValue.Text);
-                    txtValue.Text = cdblCurrTotal.ToString();
-                    break;
-                case "*":
-                    cdblCurrTotal *=
-                    Convert.ToDouble(txtValue.Text);
-                    txtValue.Text = cdblCurrTotal.ToString();
-                    break;
-                case "/":
-                    cdblCurrTotal /=
-                    Convert.ToDouble(txtValue.Text);
-                    txtValue.Text = cdblCurrTotal.ToString();
-                    break;
-
-            }
-
-        }
-
-
-
-
         private void btnSubtrac_Click(object sender, EventArgs e)
         {
-            cdblCurrTotal += Convert.ToDouble(txtValue.Text);
-            cblnReplace = true;
-            cstrLastOperation = "-";
-
+            operation = "-";
+            num1 = int.Parse(txtValue.Text);
+            txtValue.Clear();
         }
 
         private void btnMultiple_Click(object sender, EventArgs e)
         {
-            cdblCurrTotal += Convert.ToDouble(txtValue.Text);
-            cblnReplace = true;
-            cstrLastOperation = "*";
-
+            operation = "*";
+            num1 = int.Parse(txtValue.Text);
+            txtValue.Clear();
         }
 
         private void btnDivide_Click(object sender, EventArgs e)
         {
-            cdblCurrTotal += Convert.ToDouble(txtValue.Text);
-            cblnReplace = true;
-            cstrLastOperation = "/";
+            operation = "/";
+            num1 = int.Parse(txtValue.Text);
+            txtValue.Clear();
         }
+
+        private void btnCLear_Click(object sender, EventArgs e)
+        {
+            txtValue.Clear();
+            num1 = 0;
+            num2 = 0;
+            operation = "";
+        }
+
+        private void btnEquals_Click(object sender, EventArgs e)
+        {
+            num2 = int.Parse(txtValue.Text);
+            switch (operation)
+            {
+               
+                case "+":
+                    result = num1 + num2;
+                    break;
+                case "-":
+                    result = num1 - num2;
+                    break;
+                case "*":
+                    result = num1 * num2;
+                    break;
+                case "/":
+                    result = num1 / num2;
+                    break;
+            }
+            txtValue.Text = result.ToString();
+            operation = "";
+        }
+
+
+
+
+
+
+
+
+
+
     }
 }

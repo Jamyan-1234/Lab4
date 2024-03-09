@@ -202,7 +202,7 @@ namespace Lab4
             txtValue.Text = result.ToString();
             operation = "";
         }
-        //ustgaash
+        
         
     }
 }

@@ -65,7 +65,6 @@
             txtValue.Size = new Size(261, 27);
             txtValue.TabIndex = 0;
             txtValue.TabStop = false;
-            txtValue.Text = "0.";
             txtValue.TextAlign = HorizontalAlignment.Right;
             txtValue.TextChanged += txtValue_TextChanged;
             // 

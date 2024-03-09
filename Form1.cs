@@ -151,7 +151,9 @@ namespace Lab4
 
         private void btnPercent_Click(object sender, EventArgs e)
         {
-
+            operation = "%";
+            num1 = int.Parse(txtValue.Text);
+            txtValue.Clear();
         }
 
         private void btnSqrt_Click(object sender, EventArgs e)
@@ -192,6 +194,9 @@ namespace Lab4
                     break;
                 case "/":
                     result = num1 / num2;
+                    break;
+                case "%":                    
+                    result = (num1/100)/num2;
                     break;
             }
             txtValue.Text = result.ToString();

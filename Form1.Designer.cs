@@ -247,6 +247,7 @@
             Btn1.TabIndex = 19;
             Btn1.Text = "1";
             Btn1.UseVisualStyleBackColor = true;
+            Btn1.Click += Btn1_Click;
             // 
             // Btn2
             // 
@@ -257,6 +258,7 @@
             Btn2.TabIndex = 20;
             Btn2.Text = "2";
             Btn2.UseVisualStyleBackColor = true;
+            Btn2.Click += Btn2_Click;
             // 
             // Btn3
             // 
@@ -267,6 +269,7 @@
             Btn3.TabIndex = 21;
             Btn3.Text = "3";
             Btn3.UseVisualStyleBackColor = true;
+            Btn3.Click += Btn3_Click;
             // 
             // Btn4
             // 
@@ -277,6 +280,7 @@
             Btn4.TabIndex = 22;
             Btn4.Text = "4";
             Btn4.UseVisualStyleBackColor = true;
+            Btn4.Click += Btn4_Click;
             // 
             // Btn5
             // 
@@ -287,6 +291,7 @@
             Btn5.TabIndex = 23;
             Btn5.Text = "5";
             Btn5.UseVisualStyleBackColor = true;
+            Btn5.Click += Btn5_Click;
             // 
             // Btn6
             // 
@@ -297,6 +302,7 @@
             Btn6.TabIndex = 24;
             Btn6.Text = "6";
             Btn6.UseVisualStyleBackColor = true;
+            Btn6.Click += Btn6_Click;
             // 
             // Btn7
             // 
@@ -307,6 +313,7 @@
             Btn7.TabIndex = 25;
             Btn7.Text = "7";
             Btn7.UseVisualStyleBackColor = true;
+            Btn7.Click += Btn7_Click;
             // 
             // Btn8
             // 
@@ -317,6 +324,7 @@
             Btn8.TabIndex = 26;
             Btn8.Text = "8";
             Btn8.UseVisualStyleBackColor = true;
+            Btn8.Click += Btn8_Click;
             // 
             // Btn9
             // 
@@ -327,6 +335,7 @@
             Btn9.TabIndex = 27;
             Btn9.Text = "9";
             Btn9.UseVisualStyleBackColor = true;
+            Btn9.Click += Btn9_Click;
             // 
             // frmCalculator
             // 

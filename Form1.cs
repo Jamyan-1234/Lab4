@@ -6,7 +6,7 @@ namespace Lab4
 
         int num1;
         int num2;
-        int result;
+        double result;
         string operation;
 
 
@@ -177,6 +177,12 @@ namespace Lab4
 
 
 
+
+
+
+
+
+
         private void btnEquals_Click(object sender, EventArgs e)
         {
             num2 = int.Parse(txtValue.Text);
@@ -195,8 +201,12 @@ namespace Lab4
                 case "/":
                     result = num1 / num2;
                     break;
-                case "%":                    
-                    result = (num1/100)/num2;
+                case "%":
+                    double floatednum1 = Convert.ToDouble(num1);
+                    double new_result = (floatednum1 / 100) * num2;
+                    result = new_result;
+                    
+                    
                     break;
             }
             txtValue.Text = result.ToString();

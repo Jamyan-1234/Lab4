@@ -77,9 +77,6 @@ namespace Lab4
 
 
 
-
-
-
         private void btnPlus_Click(object sender, EventArgs e)
         {
             operation = "+";
@@ -139,12 +136,26 @@ namespace Lab4
 
         private void btnPlusMinis_Click(object sender, EventArgs e)
         {
-
+            if (!string.IsNullOrEmpty(txtValue.Text))
+            {
+                if (txtValue.Text.StartsWith("-"))
+                {
+                    txtValue.Text = txtValue.Text.Substring(1); 
+                }
+                else
+                {
+                    txtValue.Text = "-" + txtValue.Text; 
+                }
+            }
         }
 
         private void btnPeriod_Click(object sender, EventArgs e)
         {
-
+            if (!txtValue.Text.Contains("."))
+            {
+                
+                txtValue.Text += ".";
+            }
         }
 
         private void btnOneOverX_Click(object sender, EventArgs e)
@@ -177,12 +188,15 @@ namespace Lab4
 
         private void btnCE_Click(object sender, EventArgs e)
         {
-
+            txtValue.Text = "";
         }
 
         private void btnBackspace_Click(object sender, EventArgs e)
         {
-
+            if (txtValue.Text.Length > 0)
+            {
+                txtValue.Text = txtValue.Text.Remove(txtValue.Text.Length - 1);
+            }
         }
 
 

@@ -49,9 +49,9 @@
             // 
             // txtValue
             // 
-            txtValue.Location = new Point(93, 60);
+            txtValue.Location = new Point(12, 12);
             txtValue.Name = "txtValue";
-            txtValue.Size = new Size(261, 27);
+            txtValue.Size = new Size(307, 27);
             txtValue.TabIndex = 0;
             txtValue.TabStop = false;
             txtValue.TextAlign = HorizontalAlignment.Right;
@@ -59,7 +59,7 @@
             // 
             // btnBackspace
             // 
-            btnBackspace.Location = new Point(84, 103);
+            btnBackspace.Location = new Point(49, 57);
             btnBackspace.Name = "btnBackspace";
             btnBackspace.Size = new Size(89, 29);
             btnBackspace.TabIndex = 1;
@@ -69,7 +69,7 @@
             // 
             // btnCE
             // 
-            btnCE.Location = new Point(179, 103);
+            btnCE.Location = new Point(144, 57);
             btnCE.Name = "btnCE";
             btnCE.Size = new Size(89, 29);
             btnCE.TabIndex = 2;
@@ -79,7 +79,7 @@
             // 
             // btnCLear
             // 
-            btnCLear.Location = new Point(274, 103);
+            btnCLear.Location = new Point(239, 57);
             btnCLear.Name = "btnCLear";
             btnCLear.Size = new Size(89, 29);
             btnCLear.TabIndex = 3;
@@ -89,9 +89,9 @@
             // 
             // btnMemoryClear
             // 
-            btnMemoryClear.Location = new Point(2, 148);
+            btnMemoryClear.Location = new Point(2, 92);
             btnMemoryClear.Name = "btnMemoryClear";
-            btnMemoryClear.Size = new Size(84, 29);
+            btnMemoryClear.Size = new Size(54, 29);
             btnMemoryClear.TabIndex = 4;
             btnMemoryClear.Text = "MC";
             btnMemoryClear.UseVisualStyleBackColor = true;
@@ -99,9 +99,9 @@
             // 
             // btnMemoryRecall
             // 
-            btnMemoryRecall.Location = new Point(2, 183);
+            btnMemoryRecall.Location = new Point(2, 127);
             btnMemoryRecall.Name = "btnMemoryRecall";
-            btnMemoryRecall.Size = new Size(84, 29);
+            btnMemoryRecall.Size = new Size(54, 29);
             btnMemoryRecall.TabIndex = 5;
             btnMemoryRecall.Text = "MR";
             btnMemoryRecall.UseVisualStyleBackColor = true;
@@ -109,9 +109,9 @@
             // 
             // btnMemorySave
             // 
-            btnMemorySave.Location = new Point(2, 218);
+            btnMemorySave.Location = new Point(2, 162);
             btnMemorySave.Name = "btnMemorySave";
-            btnMemorySave.Size = new Size(84, 29);
+            btnMemorySave.Size = new Size(54, 29);
             btnMemorySave.TabIndex = 6;
             btnMemorySave.Text = "MS";
             btnMemorySave.UseVisualStyleBackColor = true;
@@ -119,9 +119,9 @@
             // 
             // btnMemoryPlus
             // 
-            btnMemoryPlus.Location = new Point(2, 253);
+            btnMemoryPlus.Location = new Point(2, 197);
             btnMemoryPlus.Name = "btnMemoryPlus";
-            btnMemoryPlus.Size = new Size(84, 29);
+            btnMemoryPlus.Size = new Size(54, 29);
             btnMemoryPlus.TabIndex = 7;
             btnMemoryPlus.Text = "+M";
             btnMemoryPlus.UseVisualStyleBackColor = true;
@@ -129,7 +129,7 @@
             // 
             // btnDivide
             // 
-            btnDivide.Location = new Point(243, 148);
+            btnDivide.Location = new Point(208, 92);
             btnDivide.Name = "btnDivide";
             btnDivide.Size = new Size(60, 29);
             btnDivide.TabIndex = 8;
@@ -139,7 +139,7 @@
             // 
             // btnMultiple
             // 
-            btnMultiple.Location = new Point(243, 183);
+            btnMultiple.Location = new Point(208, 127);
             btnMultiple.Name = "btnMultiple";
             btnMultiple.Size = new Size(60, 29);
             btnMultiple.TabIndex = 9;
@@ -149,7 +149,7 @@
             // 
             // btnSubtrac
             // 
-            btnSubtrac.Location = new Point(243, 218);
+            btnSubtrac.Location = new Point(208, 162);
             btnSubtrac.Name = "btnSubtrac";
             btnSubtrac.Size = new Size(60, 29);
             btnSubtrac.TabIndex = 10;
@@ -159,7 +159,7 @@
             // 
             // btnPlus
             // 
-            btnPlus.Location = new Point(243, 253);
+            btnPlus.Location = new Point(208, 197);
             btnPlus.Name = "btnPlus";
             btnPlus.Size = new Size(60, 29);
             btnPlus.TabIndex = 11;
@@ -170,7 +170,7 @@
             // btnSqrt
             // 
             btnSqrt.ForeColor = Color.Blue;
-            btnSqrt.Location = new Point(309, 148);
+            btnSqrt.Location = new Point(274, 92);
             btnSqrt.Name = "btnSqrt";
             btnSqrt.Size = new Size(54, 29);
             btnSqrt.TabIndex = 12;
@@ -181,7 +181,7 @@
             // btnPercent
             // 
             btnPercent.ForeColor = Color.Blue;
-            btnPercent.Location = new Point(309, 183);
+            btnPercent.Location = new Point(274, 127);
             btnPercent.Name = "btnPercent";
             btnPercent.Size = new Size(54, 29);
             btnPercent.TabIndex = 13;
@@ -192,7 +192,7 @@
             // btnOneOverX
             // 
             btnOneOverX.ForeColor = Color.Blue;
-            btnOneOverX.Location = new Point(309, 218);
+            btnOneOverX.Location = new Point(274, 162);
             btnOneOverX.Name = "btnOneOverX";
             btnOneOverX.Size = new Size(54, 29);
             btnOneOverX.TabIndex = 14;
@@ -202,7 +202,7 @@
             // 
             // btnEquals
             // 
-            btnEquals.Location = new Point(309, 253);
+            btnEquals.Location = new Point(274, 197);
             btnEquals.Name = "btnEquals";
             btnEquals.Size = new Size(54, 29);
             btnEquals.TabIndex = 15;
@@ -213,7 +213,7 @@
             // btnPlusMinis
             // 
             btnPlusMinis.ForeColor = Color.Blue;
-            btnPlusMinis.Location = new Point(138, 253);
+            btnPlusMinis.Location = new Point(103, 197);
             btnPlusMinis.Name = "btnPlusMinis";
             btnPlusMinis.Size = new Size(54, 29);
             btnPlusMinis.TabIndex = 16;
@@ -224,7 +224,7 @@
             // btnPeriod
             // 
             btnPeriod.ForeColor = Color.Blue;
-            btnPeriod.Location = new Point(198, 253);
+            btnPeriod.Location = new Point(163, 197);
             btnPeriod.Name = "btnPeriod";
             btnPeriod.Size = new Size(43, 29);
             btnPeriod.TabIndex = 17;
@@ -235,7 +235,7 @@
             // Btn0
             // 
             Btn0.ForeColor = Color.Blue;
-            Btn0.Location = new Point(92, 253);
+            Btn0.Location = new Point(57, 197);
             Btn0.Name = "Btn0";
             Btn0.Size = new Size(43, 29);
             Btn0.TabIndex = 18;
@@ -246,7 +246,7 @@
             // Btn1
             // 
             Btn1.ForeColor = Color.Blue;
-            Btn1.Location = new Point(93, 218);
+            Btn1.Location = new Point(58, 162);
             Btn1.Name = "Btn1";
             Btn1.Size = new Size(43, 29);
             Btn1.TabIndex = 19;
@@ -257,7 +257,7 @@
             // Btn2
             // 
             Btn2.ForeColor = Color.Blue;
-            Btn2.Location = new Point(142, 218);
+            Btn2.Location = new Point(107, 162);
             Btn2.Name = "Btn2";
             Btn2.Size = new Size(50, 29);
             Btn2.TabIndex = 20;
@@ -268,7 +268,7 @@
             // Btn3
             // 
             Btn3.ForeColor = Color.Blue;
-            Btn3.Location = new Point(198, 218);
+            Btn3.Location = new Point(163, 162);
             Btn3.Name = "Btn3";
             Btn3.Size = new Size(43, 29);
             Btn3.TabIndex = 21;
@@ -279,7 +279,7 @@
             // Btn4
             // 
             Btn4.ForeColor = Color.Blue;
-            Btn4.Location = new Point(92, 183);
+            Btn4.Location = new Point(57, 127);
             Btn4.Name = "Btn4";
             Btn4.Size = new Size(43, 29);
             Btn4.TabIndex = 22;
@@ -290,7 +290,7 @@
             // Btn5
             // 
             Btn5.ForeColor = Color.Blue;
-            Btn5.Location = new Point(142, 183);
+            Btn5.Location = new Point(107, 127);
             Btn5.Name = "Btn5";
             Btn5.Size = new Size(50, 29);
             Btn5.TabIndex = 23;
@@ -301,7 +301,7 @@
             // Btn6
             // 
             Btn6.ForeColor = Color.Blue;
-            Btn6.Location = new Point(198, 183);
+            Btn6.Location = new Point(163, 127);
             Btn6.Name = "Btn6";
             Btn6.Size = new Size(43, 29);
             Btn6.TabIndex = 24;
@@ -312,7 +312,7 @@
             // Btn7
             // 
             Btn7.ForeColor = Color.Blue;
-            Btn7.Location = new Point(93, 148);
+            Btn7.Location = new Point(58, 92);
             Btn7.Name = "Btn7";
             Btn7.Size = new Size(43, 29);
             Btn7.TabIndex = 25;
@@ -323,7 +323,7 @@
             // Btn8
             // 
             Btn8.ForeColor = Color.Blue;
-            Btn8.Location = new Point(142, 148);
+            Btn8.Location = new Point(107, 92);
             Btn8.Name = "Btn8";
             Btn8.Size = new Size(50, 29);
             Btn8.TabIndex = 26;
@@ -334,7 +334,7 @@
             // Btn9
             // 
             Btn9.ForeColor = Color.Blue;
-            Btn9.Location = new Point(198, 148);
+            Btn9.Location = new Point(163, 92);
             Btn9.Name = "Btn9";
             Btn9.Size = new Size(43, 29);
             Btn9.TabIndex = 27;
@@ -346,7 +346,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(381, 304);
+            ClientSize = new Size(339, 232);
             Controls.Add(Btn9);
             Controls.Add(Btn8);
             Controls.Add(Btn7);

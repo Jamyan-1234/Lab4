@@ -146,6 +146,13 @@ namespace Lab4
 
         private void btnOneOverX_Click(object sender, EventArgs e)
         {
+            operation = "1/x";
+            num1 = int.Parse(txtValue.Text);
+            double overx = Convert.ToDouble(num1);
+            double one = 1.0;
+            double new_result = one / overx;
+            txtValue.Text = new_result.ToString();
+
 
         }
 
@@ -204,10 +211,9 @@ namespace Lab4
                 case "%":
                     double floatednum1 = Convert.ToDouble(num1);
                     double new_result = (floatednum1 / 100) * num2;
-                    result = new_result;
-                    
-                    
+                    result = new_result;                 
                     break;
+               
             }
             txtValue.Text = result.ToString();
             operation = "";

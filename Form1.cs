@@ -1,4 +1,4 @@
-namespace Lab4
+﻿namespace Lab4
 {
     public partial class frmCalculator : Form
     {
@@ -9,6 +9,7 @@ namespace Lab4
         double result;
         string operation;
         double memory;
+        double PLUS_memory;
 
 
         private void txtValue_TextChanged(object sender, EventArgs e)
@@ -131,7 +132,9 @@ namespace Lab4
 
         private void btnMemoryPlus_Click(object sender, EventArgs e)
         {
-
+            PLUS_memory = double.Parse(txtValue.Text);
+            memory += PLUS_memory;
+            txtValue.Clear();
         }
 
         private void btnPlusMinis_Click(object sender, EventArgs e)
@@ -209,33 +212,48 @@ namespace Lab4
 
         private void btnEquals_Click(object sender, EventArgs e)
         {
-            num2 = double.Parse(txtValue.Text);
-            switch (operation)
+            try
             {
-
-                case "+":
-                    result = num1 + num2;
-                    break;
-                case "-":
-                    result = num1 - num2;
-                    break;
-                case "*":
-                    result = num1 * num2;
-                    break;
-                case "/":
-                    result = num1 / num2;
-                    break;
-                case "%":
-                    double floatednum1 = Convert.ToDouble(num1);
-                    double new_result = (floatednum1 / 100) * num2;
-                    result = new_result;                 
-                    break;
-               
+                num2 = double.Parse(txtValue.Text);
+                switch (operation)
+                {
+                    case "+":
+                        result = num1 + num2;
+                        break;
+                    case "-":
+                        result = num1 - num2;
+                        break;
+                    case "*":
+                        result = num1 * num2;
+                        break;
+                    case "/":
+                        if (num2 == 0)
+                        {
+                            throw new DivideByZeroException("Cannot divide by zero.");
+                        }
+                        result = num1 / num2;
+                        break;
+                    case "%":
+                        double floatednum1 = Convert.ToDouble(num1);
+                        double new_result = (floatednum1 / 100) * num2;
+                        result = new_result;
+                        break;
+                }
+                txtValue.Text = result.ToString();
+                operation = "";
             }
-            txtValue.Text = result.ToString();
-            operation = "";
+            catch (FormatException ex)
+            {
+                MessageBox.Show("Zovhon too oruulna uu", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (DivideByZeroException ex)
+            {
+                MessageBox.Show("Toog 0-t huvaah bolomjgui", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
         }
-        
-        
+
+
+
     }
 }

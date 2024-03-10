@@ -4,10 +4,11 @@ namespace Lab4
     {
 
 
-        int num1;
-        int num2;
+        double num1;
+        double num2;
         double result;
         string operation;
+        double memory;
 
 
         private void txtValue_TextChanged(object sender, EventArgs e)
@@ -82,27 +83,27 @@ namespace Lab4
         private void btnPlus_Click(object sender, EventArgs e)
         {
             operation = "+";
-            num1 = int.Parse(txtValue.Text);
+            num1 = double.Parse(txtValue.Text);
             txtValue.Clear();
         }
         private void btnSubtrac_Click(object sender, EventArgs e)
         {
             operation = "-";
-            num1 = int.Parse(txtValue.Text);
+            num1 = double.Parse(txtValue.Text);
             txtValue.Clear();
         }
 
         private void btnMultiple_Click(object sender, EventArgs e)
         {
             operation = "*";
-            num1 = int.Parse(txtValue.Text);
+            num1 = double.Parse(txtValue.Text);
             txtValue.Clear();
         }
 
         private void btnDivide_Click(object sender, EventArgs e)
         {
             operation = "/";
-            num1 = int.Parse(txtValue.Text);
+            num1 = double.Parse(txtValue.Text);
             txtValue.Clear();
         }
 
@@ -116,17 +117,19 @@ namespace Lab4
 
         private void btnMemoryClear_Click(object sender, EventArgs e)
         {
-
+            memory = 0;
         }
 
         private void btnMemoryRecall_Click(object sender, EventArgs e)
         {
 
+            txtValue.Text = memory.ToString();
         }
 
         private void btnMemorySave_Click(object sender, EventArgs e)
         {
-
+            memory = double.Parse(txtValue.Text);
+            txtValue.Clear();
         }
 
         private void btnMemoryPlus_Click(object sender, EventArgs e)
@@ -192,7 +195,7 @@ namespace Lab4
 
         private void btnEquals_Click(object sender, EventArgs e)
         {
-            num2 = int.Parse(txtValue.Text);
+            num2 = double.Parse(txtValue.Text);
             switch (operation)
             {
 

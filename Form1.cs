@@ -129,7 +129,7 @@
             memory = double.Parse(txtValue.Text);
             txtValue.Clear();
         }
-
+        //rr
         private void btnMemoryPlus_Click(object sender, EventArgs e)
         {
             PLUS_memory = double.Parse(txtValue.Text);
